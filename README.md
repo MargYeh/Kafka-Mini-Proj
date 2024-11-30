@@ -4,7 +4,9 @@ This project uses Kafka and Python to build a real-time fraud detection system. 
 
 ## How to run
 Start the local Kafka cluster with:
-```docker-compose -f docker-compose.kafka.yml up -d```
+```
+docker-compose -f docker-compose.kafka.yml up -d
+```
 
 To confirm it is running, docker ps should show the following containers:
 ![image](https://github.com/user-attachments/assets/3aeebe26-f3a6-4428-81ba-077ee0eb0ea4)
