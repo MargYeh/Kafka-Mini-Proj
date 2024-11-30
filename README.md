@@ -3,6 +3,11 @@
 This project uses Kafka and Python to build a real-time fraud detection system. The generator creates and sends transactions with random accounts and amounts to simulate the transactions being sent from a bank. The detector recieves the transactions sent through the Kafka network, determines whether they are fraudulent or not, and then sends them to the appropiate topics. 
 
 ## How to run
+Create the network which both the Kafka cluster and the generator/detector will run on:
+```
+docker network create kafka-network
+```
+
 Start the local Kafka cluster with:
 ```
 docker-compose -f docker-compose.kafka.yml up -d
